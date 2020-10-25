@@ -6,7 +6,7 @@ The container comes with Visual studio code installed already.
 
 ## Table of Content
 
-- [PHP Cloud Devevelopment Environment](#php-cloud-devevelopment-environment)
+- [PHP Cloud Development Environment](#php-cloud-development-environment)
   - [Table of Content](#table-of-content)
   - [Get started](#get-started)
     - [Image](#image)
@@ -20,7 +20,7 @@ The container comes with Visual studio code installed already.
 The easiest way to get started is to create a docker-compose.yaml
 You will need to the following in your compose file.
 
-- The image to starte the container.
+- The image to start the container.
 - The ports that needs to be exposed to your host machine.
 - Environment variables.
   - Password for authencitation.
