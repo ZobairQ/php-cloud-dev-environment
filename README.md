@@ -1,11 +1,12 @@
 
-# php-cloud-dev-environment
+# PHP Cloud Devevelopment Environment
+
 This is a PHP development environment inside a docker container, the environment has everything you need to get starting developing php right away.
 The container comes with Visual studio code installed already.
 
 ## Table of Content
 
-- [php-cloud-dev-environment](#php-cloud-dev-environment)
+- [PHP Cloud Devevelopment Environment](#php-cloud-devevelopment-environment)
   - [Table of Content](#table-of-content)
   - [Get started](#get-started)
     - [Image](#image)
