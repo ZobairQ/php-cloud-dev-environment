@@ -1,5 +1,5 @@
 
-# PHP Cloud Devevelopment Environment
+# PHP Cloud Development Environment
 
 This is a PHP development environment inside a docker container, the environment has everything you need to get starting developing php right away.
 The container comes with Visual studio code installed already.
