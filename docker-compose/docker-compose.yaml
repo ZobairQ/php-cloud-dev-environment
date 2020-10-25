@@ -2,11 +2,48 @@ version: "3.8"
 
 services:
   dev-environment:
+    container_name: php-dev
     image: docker.pkg.github.com/zobairq/php-cloud-dev-environment/php-cloud-dev-environment:0.1
     ports:
       - 8443:8443
-      - 8081:80
-    container_name: php-dev
+      - 9090:80
     environment:
       - PASSWORD=password
       - PORT=8443
+    networks:
+      - united_containers
+
+  db:
+    container_name: mysql
+    image: mysql:8.0
+    ports:
+      - "3306:3306"
+    command: --default-authentication-plugin=mysql_native_password
+    environment:
+      MYSQL_DATABASE: dummyDB
+      MYSQL_USER: root
+      MYSQL_PASSWORD: root
+      MYSQL_ROOT_PASSWORD: root
+    volumes:
+      - persistent:/var/lib/mysql
+    networks:
+      - united_containers
+
+  phpmyadmin:
+    container_name: phpmyadmin
+    image: phpmyadmin/phpmyadmin
+    links:
+      - db:db
+    ports:
+      - 9091:80
+    environment:
+      MYSQL_USER: root
+      MYSQL_PASSWORD: root
+      MYSQL_ROOT_PASSWORD: root
+    networks:
+      - united_containers
+
+volumes:
+  persistent:
+networks:
+  united_containers:
