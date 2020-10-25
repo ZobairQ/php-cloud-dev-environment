@@ -12,4 +12,8 @@ apt-get update \
     && rm -rf /var/lib/apt/lists/* \
     && docker-php-ext-install zip;
 
+echo "Installing code-server... "
 
+curl -fsSL https://code-server.dev/install.sh | sh
+
+code-server --bind-addr 0.0.0.0:8080
