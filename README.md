@@ -40,3 +40,27 @@ This will build and name the image to `php-dev`
 
 ### Docker-compose
 
+You can create a file called `docker-compose.yaml` if you need to fresh this subject up, please take a look at my [docker-compose cheat-sheet](https://github.com/ZobairQ/docker-compose-cheat-sheet)
+
+Here is a sample that you can use to get started quickly:
+```yaml
+version: "3.8"
+
+services:
+  dev-environment:
+    build: .
+    image: docker.pkg.github.com/zobairq/php-cloud-dev-environment/php-cloud-dev-environment:0.1
+    ports:
+      - 8443:8443
+      - 8081:80
+    container_name: php-dev
+    environment:
+      - PASSWORD=password
+      - PORT=8443
+```
+
+For the environment variables:
+You can change password to something more secure
+and if you change the port from 8443 to anything, remember to change the ports that are being exposed (under ports) as well.
+
+Port 80 is exposed to 8081, and this is used for the php server that you can start.
