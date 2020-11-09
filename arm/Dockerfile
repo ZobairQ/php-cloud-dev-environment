@@ -1,6 +1,7 @@
 FROM navikey/raspbian-buster
 
 RUN apt-get update \
+    && apt-get install -y curl sudo \
     && wget https://nodejs.org/dist/v15.1.0/node-v15.1.0-linux-armv7l.tar.xz \ 
     && tar -xvf node-v15.1.0-linux-armv7l.tar.xz \ 
     && cd node-v15.1.0-linux-armv7l \ 
