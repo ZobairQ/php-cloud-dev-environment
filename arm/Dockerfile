@@ -1,4 +1,4 @@
-FROM raspbian/jessie
+FROM navikey/raspbian-buster
 
 RUN apt-get update \
     && wget https://nodejs.org/dist/v15.1.0/node-v15.1.0-linux-armv7l.tar.xz \ 
