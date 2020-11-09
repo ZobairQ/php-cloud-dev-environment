@@ -7,7 +7,7 @@ RUN apt-get update \
     && cp -R * /usr/local/ \
     && apt-get install apache2 -y \
     && chmod -R 777 /var/www/html \
-    && apt-get install php libapache2-mod-php -y \
+    && apt-get install libapache2-mod-php -y \
     && curl -fsSL https://code-server.dev/install.sh | sh
 
 EXPOSE 80
