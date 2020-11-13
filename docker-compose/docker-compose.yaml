@@ -10,6 +10,8 @@ services:
     environment:
       - PASSWORD=password
       - PORT=8443
+    volumes:
+      - environment_persistent:/
     networks:
       - united_containers
 
@@ -45,5 +47,6 @@ services:
 
 volumes:
   persistent:
+  environment_persistent:
 networks:
   united_containers:
