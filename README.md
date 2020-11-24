@@ -8,12 +8,47 @@ The container comes with Visual studio code installed already.
 
 - [PHP Cloud Development Environment](#php-cloud-development-environment)
   - [Table of Content](#table-of-content)
+  - [Prerequisite](#prerequisite)
+    - [Docker login](#docker-login)
+      - [Generate new Personal Access Token](#generate-new-personal-access-token)
+      - [Docker Login](#docker-login-1)
   - [Get started](#get-started)
     - [Image](#image)
       - [Downloading pre-built image](#downloading-pre-built-image)
       - [Building your own image](#building-your-own-image)
     - [Docker-compose](#docker-compose)
     - [PHP Server](#php-server)
+
+## Prerequisite
+
+You need to have Docker and docker-compose installed on your system. 
+If you do wish to use the pre-built image, you have to do a docker login. Here is a quick guide on how to do so
+
+### Docker login
+
+You need to perform two steps to do a docker login.
+
+#### Generate new Personal Access Token
+
+1. Navigate to [Personal Access Token Page](https://github.com/settings/tokens) on Github.
+
+1. Press Generate new token
+
+1. Make sure you select __Write and Read__ packages on github.
+
+1. Press Generate token.
+
+1. Copy the token and Enable SSO
+
+#### Docker Login
+
+1. Head back to your terminal and type following
+
+		docker login --username <USERNAME> --password <PERSONAL_ACCESS_TOKEN> docker.pkg.github.com
+
+1. Enter your Github username ( if you dont know your usename, head to [Github](https://github.com/) and click on your avatar it is on the top right corner next to a plus sign. A drop down will appear and the first thing it says is "Signed in as <USERNAME>")
+
+1. Enter your personal access token as password.
 
 ## Get started
 
@@ -36,6 +71,8 @@ You can either build your own image from the Dockerfile that is included or you 
 If you want to use the pre-built image you can just download it by running following command
 
     docker pull docker.pkg.github.com/zobairq/php-cloud-dev-environment/php-cloud-dev-environment:0.1
+
+Please note if you wish download the pre-built image off github packages you will need to do a docker login otherwise it will not pull anything from github packages. Please refer to [Docker login](#docker-login)
 
 #### Building your own image
 
