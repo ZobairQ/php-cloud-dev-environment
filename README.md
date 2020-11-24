@@ -13,6 +13,9 @@ The container comes with Visual studio code installed already.
       - [Generate new Personal Access Token](#generate-new-personal-access-token)
       - [Docker Login](#docker-login-1)
   - [Get started](#get-started)
+    - [Quick start](#quick-start)
+      - [Clone this repository](#clone-this-repository)
+      - [Start containers using docker compose](#start-containers-using-docker-compose)
     - [Image](#image)
       - [Downloading pre-built image](#downloading-pre-built-image)
       - [Building your own image](#building-your-own-image)
@@ -61,6 +64,21 @@ You will need to the following in your compose file.
   - Password for authencitation.
   - Port for which VS-code should use.
 - [OPTIONAL] container name
+
+
+### Quick start
+
+You can quickly get started by
+
+#### Clone this repository
+
+      git clone https://github.com/ZobairQ/php-cloud-dev-environment.git
+
+#### Start containers using docker compose
+
+  if you need navigate to the `/docker-compose/` directory and then execute
+
+       docker-compose up
 
 ### Image
 
