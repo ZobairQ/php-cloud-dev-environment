@@ -3,6 +3,7 @@
 
 This is a PHP development environment inside a docker container, the environment has everything you need to get starting developing php right away.
 The container comes with Visual studio code installed already.
+
 ![Visual studio running inside the browser](images/preview.png)
 ## Table of Content
 
