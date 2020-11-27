@@ -138,7 +138,7 @@ Port 80 is exposed to 8081, and this is used for the php server that you can sta
 
 You can also start the apache server by
 
-    sudo service apache2 restart
+    sudo service apache2 start
 
 Then you can run your PHP by putting it in the `/var/wwww/html` folder.
 
