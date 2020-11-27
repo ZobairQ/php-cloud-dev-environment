@@ -21,6 +21,7 @@ The container comes with Visual studio code installed already.
       - [Downloading pre-built image](#downloading-pre-built-image)
       - [Building your own image](#building-your-own-image)
     - [Docker-compose](#docker-compose)
+    - [Apache Web server](#apache-web-server)
     - [PHP Server](#php-server)
 
 ## Prerequisite
@@ -65,7 +66,6 @@ You will need to the following in your compose file.
   - Password for authencitation.
   - Port for which VS-code should use.
 - [OPTIONAL] container name
-
 
 ### Quick start
 
@@ -133,6 +133,15 @@ You can change password to something more secure
 and if you change the port from 8443 to anything, remember to change the ports that are being exposed (under ports) as well.
 
 Port 80 is exposed to 8081, and this is used for the php server that you can start.
+
+### Apache Web server
+
+You can also start the apache server by
+
+    sudo service apache2 restart
+
+Then you can run your PHP by putting it in the `/var/wwww/html` folder.
+
 
 ### PHP Server
 
