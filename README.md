@@ -142,7 +142,6 @@ You can also start the apache server by
 
 Then you can run your PHP by putting it in the `/var/wwww/html` folder.
 
-
 ### PHP Server
 
 Once you got the container started and loggin inside vs-code. Create your php project and once you are ready, then open the terminal inside VS-code and run the following commnad to start the php-server
