@@ -109,7 +109,7 @@ This will build and name the image to `php-dev`
 
 ### Docker-compose
 
-You can create a file called `docker-compose.yaml` if you need to fresh this subject up, please take a look at my [docker-compose cheat-sheet](https://github.com/ZobairQ/docker-compose-cheat-sheet)
+You can create a file called `docker-compose.yaml` if you need to refresh this subject, please take a look at my [docker-compose cheat-sheet](https://github.com/ZobairQ/docker-compose-cheat-sheet)
 
 Here is a sample that you can use to get started quickly:
 
